@@ -1,0 +1,26 @@
+.Lds {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .Lds:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    border-radius: 50%;
+    border: 6px solid rgb(240, 98, 98);
+    border-color: rgb(219, 184, 184) transparent rgb(240, 209, 209) transparent;
+    animation: Lds 1.2s linear infinite;
+  }
+  @keyframes Lds {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
